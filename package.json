@@ -8,8 +8,11 @@
     "start-watch": "nodemon server/server.js",
     "dev": "concurrently --kill-others \"npm run start-watch\" \"npm run build-watch\"",
     "start": "node server/server.js",
-    "build": "parcel ./client/index.html"
-  },
+  
+  "build": "parcel build ./client/index.html --no-cache"
+}
+
+  ,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kalwar/TypingGame.git"
